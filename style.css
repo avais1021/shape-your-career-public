@@ -1,0 +1,229 @@
+/* common -------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_cr {
+    /* max-width: 1156px; */
+    max-width: 1196px;
+    /* box-shadow: 2px 2px greenyellow; */
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+/* -- -------whatDrives start---------------------------------------------------------------------------------  */
+.whatDrives {
+    min-height: 800px;
+    padding: 120px 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.whatDrives h3 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.whatDrives__row {
+    display: flex;
+    gap: 52px;
+    flex-wrap: wrap;
+}
+
+.whatDrives__left {
+    width: 586px;
+    height: 452px;
+}
+
+.whatDrives__left img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.whatDrives__right p {
+    width: 546px;
+    margin-top: 26px;
+    color: rgb(0, 0, 0, 0.5);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    margin-bottom: 50px;
+}
+
+.whatDrives__right span {
+    margin-bottom: 17px;
+    display: block;
+}
+
+.knowMore_cr a {
+    display: inline-block;
+    font-size: 16px;
+    padding: 16px 42px;
+    border-radius: 8px;
+    color: white;
+    background: #747474;
+    border: none;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+
+/* -- -------whyUltratech start---------------------------------------------------------------------------------  */
+
+.whyUltratech {
+    padding: 75px 20px;
+    background: #F3F3F3;
+    font-family: 'Lato', sans-serif;
+}
+
+.whyUltratech h3 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.whyUltratech__menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7%;
+    border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+    padding-bottom: 18.5px;
+}
+
+.whyUltratech__menu li {
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(0, 0, 0, 0.58);
+    text-transform: capitalize;
+    position: relative;
+    cursor: pointer;
+    padding: 0 25px;
+}
+
+.whyUltratech__menu li::after {
+    content: '';
+    position: absolute;
+    bottom: -21px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 50px;
+    display: none;
+}
+
+
+.whyUltratechCard__wrapper {
+    margin-top: 47px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.whyUltratechCard {
+    width: 588px;
+    min-height: 122px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: white;
+    box-shadow: 0px 0px 34px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+
+}
+
+.whyUltratechCard__right {
+    padding: 20px 0px;
+}
+
+.whyUltratechCard__left {
+    height: 223px;
+}
+
+.whyUltratechCard img {
+    width: 220px;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.whyUltratechCard h4 {
+    width: 320px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 18px;
+}
+
+.whyUltratechCard p {
+    width: 313px;
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width:1240.9px) {
+    .whyUltratechCard {
+        width: 488px;
+    }
+
+    .whyUltratechCard h4 {
+        width: unset;
+    }
+
+    .whyUltratechCard p {
+        width: unset;
+    }
+
+    .whyUltratechCard__right {
+        padding-right: 8px;
+    }
+}
+
+@media screen and (max-width:930.9px) {
+    .whyUltratech__menu {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width:540.9px) {
+    .whyUltratechCard__left {
+        height: 204px;
+    }
+
+    .whyUltratechCard__left img {
+        width: 150px;
+    }
+
+    .whyUltratechCard {
+        align-items: center;
+        gap: 10px;
+    }
+
+}
+
+@media screen and (max-width:380.9px) {
+    .whyUltratechCard h4 {
+        font-size: 21px;
+    }
+}
+
+/* js css ----------- */
+.whyUltratech__box {
+    display: none;
+}
+
+.whyUlt_menu.whmenu_active {
+    font-weight: bold;
+    color: black;
+}
+
+.whyUltratech__menu li.whmenu_active::after {
+    display: block;
+}
